@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Arquivos JS na Pagina</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+
+    <a href="../03_inserindo_arquivo_js_na_pag/index.html" class="back-aula">Como Vamos Programar</a>
+    <main>
+
+        <section class="intro">
+
+            <h1>02 - Inserindo Arquivos JS na Pagina</h1>
+            
+            <h2>Intro:</h2>
+            <p>
+                Iniciaremos criando um arquivo <strong>JavaScript</strong>, para isso pode ser dado qualquer nome, desde que tenha como final <strong>.js</strong>.
+                Para o navegador conseguir fazer a leitura e executar esse arquivo <strong>js</strong>, dentro do body, melhor sendo no final, usamos uma <strong>tag</strong> chamada <strong>script</strong> e fazemos com ela, parecido com <strong>CSS</strong> onde adicionamos o <strong>atributo: src="aqui ira o local onde esta o arquivo"</strong>, semelheante ao <strong>CSS Externo</strong>.
+            </p>
+
+            <h2>Importante:</h2>
+            <p>
+                Qual diferenca entre a <strong>tag script</strong> estar no <strong>body</strong> ou no <strong>head</strong> ?
+            </p>
+            <p>
+                Quando o <strong> script </strong> está no head, ele é carregado antes do conteúdo da página. Isso pode causar problemas, porque se o <strong>JavaScript</strong> tiver erro ou demorar para carregar, o restante da página pode ficar travado ou carregar mais lentamente. Por isso, normalmente colocamos o <strong> script </strong> no final do <strong>body</strong>, para que todo o <strong>HTML</strong> carregue primeiro, e só depois o <strong>JavaScript</strong> seja executado. Isso evita erros e melhora o desempenho.
+            </p>
+
+        </section>
+
+    </main>
+    <a href="../04_hello_world/index.html" class="next-aula">Proxima Aula - Hello World</a>
+    
+    <script src="assets/js/jscript.js">
+
+    </script>
+</body>
+</html>
