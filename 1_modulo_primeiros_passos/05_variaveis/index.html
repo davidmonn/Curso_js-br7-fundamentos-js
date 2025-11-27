@@ -3,42 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Variaveis</title>
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
 
-    <a href="../" class="back-aula"> </a>
+    <a href="../04_hello_world/index.html" class="back-aula">Aula Anterior - Hello World</a>
     <main>
 
         <section class="intro">
 
 
-            <h1>02 - Hello World</h1>
+            <h1>02 - Variaveis</h1>
             
             <h2>Intro:</h2>
             <p>
-                Aqui sera mostrado como colocar verificar nosso <strong>codigo</strong>, para podermos verificar algumas informacoes que nao sao mostradas aos usuarios, podemos apertar <strong>f12</strong> e ir na aba de <strong>console</strong>, para verificar se nosso codigo funcionou corretamente.
+                Uma variavel e basicamente uma informacao que podemos deixar guardada ou melhor ser armazenada na memoria de nosso computador, para podermos usa-la quando precisarmos.
             </p>
 
-            <h2>alert("");</h2>
+            <h2>Para que serve ?</h2>
             <p>
-                Com ele conseguimos fazer basicamente assim que o usuario entre em nossa pagina, apareca uma mensagem em seu navegador
-            </p>
-            <p>
-                Obs: O alert() pausa a execução da página até o usuário clicar em “OK”. Por isso, hoje ele é mais usado para testes e aprendizado, não tanto em produção.
+                Podemos nomear uma <strong>variável</strong> com praticamente qualquer nome (seguindo as regras da linguagem) e também podemos ter várias variáveis ao mesmo tempo. Com elas, conseguimos armazenar valores específicos na memória para serem utilizados posteriormente no programa.
             </p>
 
-            <h2>console.log("");</h2>
+            <h2>Criando Variaveis:</h2>
             <p>
-                O <strong>console.log() </strong>é usado para exibir informações no console do navegador, servindo como uma ferramenta de apoio para o programador verificar se o código está funcionando corretamente e acompanhar valores de variáveis durante a execução. Ele não aparece para o usuário final, apenas para quem está desenvolvendo o sistema. É muito utilizado para testes, depuração de erros e entendimento do comportamento do código.
+                A forma correta de criarmos uma <strong>variavel</strong> corretamente e usando algumas propriedades antes da <strong>variavel</strong>, sendo elas: <strong>let</strong>, 
+            </p>
+            <ul>
+                <li>
+                    <strong>var:</strong> Forma antiga de criar variáveis. Tem escopo mais amplo (funciona fora de blocos) e pode causar confusão em projetos maiores. Hoje é pouco recomendada.
+                </li>
+                <li>
+                    <strong>let:</strong> É a forma moderna e mais usada. A variável pode ter seu valor alterado e só funciona dentro do bloco onde foi criada, o que torna o código mais seguro e organizado.
+                </li>
+                <li>
+                    <strong>const:</strong> Usada para valores constantes, que não podem ser reatribuídos depois de definidos. Também funciona apenas dentro do bloco onde foi criada. Muito usada quando o valor não deve mudar.
+                </li>
+            </ul>
+
+            <h2>Como usar:</h2>
+            <p>
+                Para usar uma <strong>variável</strong> em comandos como <strong>console.log</strong> ou <st>alert</st>, basta escrever apenas o nome da <strong>variável</strong>, sem aspas(<strong>""</strong>). As aspas são usadas somente para textos (<strong>strings</strong>). Quando usamos apenas o nome da <strong>variável</strong>, o <strr>JavaScript</strr> entende que deve executar e mostrar o valor que está armazenado nela, e não um texto literal.
+            </p>
+
+            <h2>Importante:</h2>
+            <p>
+                É importante saber que, ao usar números como valores de uma <strong>variável</strong>, devemos considerar o contexto em que eles serão utilizados. Normalmente, números são escritos sem <strong>aspas</strong>, pois quando usamos aspas o <strong>JavaScript</strong> passa a interpretá-los como texto (<strong>string</strong>), e não como um valor numérico. Isso interfere em contas, comparações e outras operações matemáticas.
             </p>
 
             <script src="assets/js/jscript.js"></script>
         </section>
 
     </main>
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../06_tipos_d_dados/index.html" class="next-aula">Proxima Aula - Tipos de Dados</a>
     
     <script src="assets/js/jscript.js">
 
