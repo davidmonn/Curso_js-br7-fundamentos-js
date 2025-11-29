@@ -1,6 +1,38 @@
 :root {
     --bd-collor: #000;
     --mn-collor: #CCC;
+    --font1: "nserif";
+    --font2: "poetsen";
+    --font3: "panton";
+    --font4: "dreams";
+}
+
+@font-face {
+    font-family: "panton";
+    src: url(../fonts/panton/Panton-Trial-Black.ttf);
+    src: url(../fonts/panton/Panton-Trial-BlackItalic.ttf);
+    src: url(../fonts/panton/Panton-Trial-Bold.ttf);
+    src: url(../fonts/panton/Panton-Trial-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "poetsen";
+    src: url(../fonts/poetsen_one/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "nserif";
+    src: url(../fonts/serif/SERIBL__.ttf);
+    src: url(../fonts/serif/SERIBLI_.ttf);
+    src: url(../fonts/serif/SERIM___.ttf);
+    src: url(../fonts/serif/SERIMI__.ttf);
+    src: url(../fonts/serif/SERIN___.ttf);
+    src: url(../fonts/serif/SERINI__.ttf);
+}
+
+@font-face {
+    font-family: "dreams";
+    src: url(../fonts/sunlight_dreams/SunlightDreams.otf) format("opentype");
 }
 
 * {
@@ -28,7 +60,7 @@ code {
 }
 
 main p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Montserrat";
     font-size: 20px;
     text-indent: 25px;
     margin: 20px 0;
@@ -47,13 +79,21 @@ main li {
 }
 
 h1, h2, h3, h4 {
-    font-family: sans-serif;
     color: blue;
     margin: 45px auto 0 auto;
 }
 
 h1 {
     text-align: center;
+    font-family: var(--font4);
+}
+
+h2 {
+    font-family: var(--font3);
+}
+
+h3 {
+    font-family: var(--font2);
 }
 
 .next-aula,
