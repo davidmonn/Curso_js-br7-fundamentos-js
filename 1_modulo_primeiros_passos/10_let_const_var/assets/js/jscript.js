@@ -1,5 +1,5 @@
-let nome = "David"
-let idade = 28
+let nome = "David";
+console.log(nome);
 
-console.log(nome)
-console.log(idade)
+nome = "Suzana";
+console.log(nome);
