@@ -1,9 +1,7 @@
-let nome = "David";
-let sobrenome = "Monteiro";
-//let fullName = nome + " " + sobrenome;
-let fullName = `${nome} ${sobrenome}`;
 let idade = 28;
-let idadeString = `${idade + 2} anos`;
 
-console.log(fullName);
-console.log(idadeString);
+if(idade > 18) {
+    console.log(`Individuo maior de idade. Idade informada: ${idade}`)
+} else {
+    console.log(`Individuo menor de idade. Idade informada: ${idade}`);
+}
