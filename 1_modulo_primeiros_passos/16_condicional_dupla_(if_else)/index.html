@@ -1,41 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condicional Dupla (if else)</title>
+
     <link rel="stylesheet" href="assets/style/style.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
     </style>
 </head>
+
 <body>
 
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <!-- Navegação entre aulas -->
+    <a href="#" class="back-aula">Aula Anterior - </a>
+
     <main>
 
+        <!-- Introdução -->
         <section class="intro">
-
-
             <h1>Condicional Dupla (if else)</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Agora iremos ver e aprender como podemos fazer condicionais duplas ou mais. Fazendo isso, conseguimos criar condicionais que sao dependentes uma das outras, pois dependendo da opcao e fizermos de forma independente, pode haver conflitos em nosso codigo.
             </p>
 
+            <h2>Resumindo:</h2>
+            <p>
+                As condicionais duplas servem para criar decisões encadeadas, onde uma condição depende da outra. Assim evitamos conflitos e garantimos que apenas um bloco será executado.
+            </p>
+        </section>
 
+        <!-- Conteúdo da aula -->
+        <section class="curso-ex">
 
+            <h3>Como fazer condicionais duplas ou + dependentes</h3>
+            <p>
+                Para podermos fazer isso, teremos que utilizar um recurso chamado de <strong>else if</strong>, com ele em uma mesma estrutura condicional, conseguimos gerar codigos com blocos dependentes, basicamente derivando de um mesmo assunto para nao haver conflitos.
+            </p>
 
+            <h3>Para que serve ?</h3>
+            <ul>
+                <li>Para criar várias condições que dependem umas das outras, usamos o else if.</li>
+                <li>Ele permite que, dentro da mesma estrutura condicional, a lógica siga um fluxo único.</li>
+                <li>Assim, todas as condições ficam ligadas ao mesmo assunto e evitamos conflitos no código.</li>
+            </ul>
 
-            <script src="assets/js/jscript.js"></script>
+            <h3>Explicacao</h3>
+            <p>
+                Quando usamos condicionais independentes para tratar o mesmo assunto, todas elas serão verificadas e podem até ser executadas, o que pode gerar conflitos no código. Já quando usamos condicionais dependentes (com else if), apenas uma condição é executada — a primeira que for verdadeira — garantindo um fluxo correto e evitando problemas.
+            </p>
+
+            <h3>Independente — Imagem de exemplo:</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="Exemplo independente">
+                </picture>
+                <figcaption>
+                    Com essa, basicamente todas sao verificadas, mesmo a primeira ja tendo sido verdadeira.
+                </figcaption>
+            </figure>
+
+            <h3>Dependente — Imagem de exemplo:</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy.png" alt="Exemplo dependente">
+                </picture>
+                <figcaption>
+                    Com essa, basicamente quando a primeira condicao e verificada como verdadeira, nao sera mais verificado as demais.
+                </figcaption>
+            </figure>
+
         </section>
 
     </main>
-    <a href="../" class="next-aula">Proxima Aula - </a>
-    
-    <script src="assets/js/jscript.js">
 
-    </script>
+    <!-- Navegação -->
+    <a href="#" class="next-aula">Proxima Aula - </a>
+
+    <!-- Script -->
+    <script src="assets/js/jscript.js"></script>
 </body>
 </html>
