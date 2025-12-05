@@ -78,8 +78,16 @@ main li {
     margin: 5px;
 }
 
+picture img {
+    max-width: 1050px;
+}
+
 figcaption {
     margin-bottom: 20px;
+}
+
+.fig-top {
+    margin: 0;
 }
 
 h1, h2, h3, h4 {

@@ -1,13 +1,17 @@
-let idade = 28;
+let isMember = true;
 
-// Exemplo de Condicional em uma variavel
-let verificacao = idade > 18 && idade < 60;
+// Condicional Ternaria
+let shipping = isMember ? 2 : 10; // Resumindo se for membro e der certo caindo no true, o reltado e 2 se der nao 10
 
-if(idade >18 && idade <  60) {
-    console.log(`Passou na verificacao`);
-} else {
-    console.log(`Nao passou na Verificacao.`)
-}
 
-console.log(verificacao);
+// Outro exemplo de condicional Ternaria para vermos se somos membros:
+console.log(`${isMember ? "Você é um membro." : "Você NÃO é um membro."}`);
 
+console.log(`Frete: ${shipping}`);
+
+// Outro exemplo
+
+let age = 28;
+
+let isAdult = (age >= 18 ? 'Adulto' : 'Nao e adulto');
+console.log(isAdult);
