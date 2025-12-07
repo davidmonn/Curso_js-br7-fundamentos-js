@@ -66,7 +66,7 @@ main p {
     margin: 20px 0;
 }
 
-main ul {
+main ul, ol {
     background-color: aqua;
     display: inline-block;
     border-radius: 15px;
