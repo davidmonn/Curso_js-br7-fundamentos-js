@@ -1,13 +1,16 @@
-let idade = 28;
+let profession = "vendedor";
 
-// Exemplo de Condicional em uma variavel
-let verificacao = idade > 18 && idade < 60;
+switch(profession) {
+    case 'fiscal' : 
+        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
+    break;
+    case 'bombeiro' :
+        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
+    break;
 
-if(idade >18 && idade <  60) {
-    console.log(`Passou na verificacao`);
-} else {
-    console.log(`Nao passou na Verificacao.`)
+    case 'policial' :
+        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
+    break;
+    default:
+        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
 }
-
-console.log(verificacao);
-
