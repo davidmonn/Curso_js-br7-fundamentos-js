@@ -1,16 +1,25 @@
-let profession = "vendedor";
+/*
+Exercicio:
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
+Calcule a porcentagem entre 2 numeros.
+Exemplo: 25% de 40 é 10.
+Fórmula de porcentagem: (x/y) * 100
+Uso da funcao:
 
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
+let x = 40;
+let y = 10;
+let pct = calcPct(x, y);
+console.log(`${pct}% de ${x} é ${y}`);
+*/
+
+function calcPct(n1,n2) {
+    let pct = (n2 / n1) * 100;
+    return pct;
+    //ou
+    // rerturn (n2 / n1) * 100
 }
+
+let x = 80;
+let y = 10;
+let pct = calcPct(x, y);
+console.log(`${pct}% de ${x} é ${y}`);
