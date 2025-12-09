@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Retorno de Funcao</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,17 +15,20 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../04_passando_param_em_funcoes/index.html" class="back-aula">Aula Anterior - Passando Parametros em Funcoes</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Retorno de Funcao</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Aqui iremos ver um pouco sobre a saida de nosso processamento de <strong>function</strong>.
+            </p>
+            <p>
+                <strong>Entrada -> Processamento -> Saida</strong>
             </p>
 
         </section>
@@ -33,6 +36,56 @@
         <article class="curso-ex">
 
             <h3>Explicacao</h3>
+            <p>
+                Ate o momento estivemos utilizando apenas o <strong>console.log</strong>, porem, uma <strong>function</strong> pode ter no final, um <strong>retorno padrao</strong> parar essa <strong>funcao</strong>. 
+            </p>
+            <p>
+                Usaremos como exemplo, se quisermos salvar o nome que armazenamos de um <strong>pararmetro</strong> em uma <strong>variavel</strong>, apenas com <strong>console.log</strong> nao temos como fazer isso, ja que ele esta apenas exbindo a informacao fornecida.
+            </p>
+
+            <h3>Maneira correta de forma basica</h3>
+            <p>
+                Fazendo dessa forma conseguimos salvar os valores fornecidos em uma variavel. 
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy.png" alt="Ex 01">
+                </picture>
+                <figcaption>
+                    Com isso conseguimos de forma simples salvar em uma variavel. Com isso fizemos oque, criamos uma variavel, usamos uma function e como parametro usamos o nome e sobrenome, apos receber os dados e salvo por meio do <strong>return</strong> em nossa <strong>variavel fullName</strong>.
+                </figcaption>
+            </figure>
+            <p>
+                Com isso, conseguimos salvar o resultado em uma variável de forma simples:
+            </p>
+            <ul>
+                <li>
+                    Criamos uma variável.
+                </li>
+                <li>
+                    Chamamos uma função.
+                </li>
+                <li>
+                    Passamos nome e sobrenome como parâmetros.
+                </li>
+                <li>
+                    A função recebeu esses dados e retornou o valor formatado.
+                </li>
+                <li>
+                    Esse valor retornado foi guardado dentro da variável fullName.
+                </li>
+            </ul>
+
+            <h3>Exemplo 01 (Forma errada)</h3>
+            <p>
+                Fazemdp apenas dessa forma nao conseguimos salvar o valor fornecido de uma function em uma <strong>variavel</strong>. Ex:
+                <figure>
+                    <picture>
+                        <img src="assets/imgs/image.png" alt=Ex 02"">
+                    </picture>
+                    <figcaption>Fazendo apenas dessa forma, ela nao ira salvar os dados em uma variavel, isso pois ela nao esta <strong>retornando nada</strong></figcaption>
+                </figure>
+            </p>
 
             <h3>Mais informacoes</h3>
 
@@ -41,7 +94,7 @@
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../06_funcao_com_retorno_condicional/index.html" class="next-aula">Proxima Aula - Funcao com Retorno Adicional</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
