@@ -1,16 +1,16 @@
-let profession = "vendedor";
+function maiorDeIdade(idade) {
+    if(idade >= 18) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
+let idade = 10;
+let verificacao = maiorDeIdade(idade);
 
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
+if(verificacao) {
+    console.log(`Maior de idade. Idade informada: ${idade}`);
+} else {
+    console.log(`Menor de idade. Idade informada: ${idade}`);
 }
