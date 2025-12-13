@@ -1,16 +1,15 @@
-let profession = "vendedor";
+// function somar(x,y) {
+//     return x+y;
+// }
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
+// console.log(somar(10,5)); 
 
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
-}
+// // Arrow Function
+// const somar = (x,y) => {
+//     return x+y;
+// }
+// console.log(somar(10,5));
+
+// Arrow Function 2
+const somar = (x,y) => x + y;
+console.log(somar(10,5));
