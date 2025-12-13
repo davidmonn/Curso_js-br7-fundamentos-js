@@ -1,16 +1,23 @@
-let profession = "vendedor";
+/*
+Crie uma funcao que valide usuario e senha.
+Usuario correto: Pedro.
+Senha correta: 123
+*/
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
+function validar(usuario, senha) {
+    if(usuario === 'David' && senha === '123') {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
+let usuario = "David";
+let senha = "123";
+let validacao = validar(usuario,senha);
+
+if(validacao) {
+    console.log(`Acesso concedido`);
+} else {
+    console.log(`Acesso Negado`);
 }
