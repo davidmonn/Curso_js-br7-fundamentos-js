@@ -1,16 +1,12 @@
-let profession = "vendedor";
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
-
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
+function addSquares(a, b) {
+    function square(x) {
+        return x * x;
+    }
+    let sqrA = square(a);
+    let sqrB = square(b);
+    
+    return sqrA + sqrB;
 }
+
+console.log(addSquares(2, 3));

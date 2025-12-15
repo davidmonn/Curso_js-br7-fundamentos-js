@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Variaveis Dentro de Funcoes</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,33 +15,55 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../10_arrow_function/index.html" class="back-aula">Aula Anterior - Arrow Function</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Variaveis Dentro de Funcoes</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Agora veremos como funciona a dinamica de <strong>variaveis</strong>, dentro e fora de <strong>funcoes</strong>.
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h3>Function que adiciona variavel</h3>
+            <p>
+                Para iniciar iremos criar uma <strong>funcao</strong> que adiciona a uma <strong>variavel</strong>
+            </p>
 
-            <h3>Mais informacoes</h3>
+            <h3>Exemplo errado:</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="Ex 01">
+                </picture>
+                <figcaption>Nesse caso havera um erro, isso pois criamos ela dentro da <strong>function</strong> ou seja, tudo que criamos dentro de uma <strong>function</strong> pertence a function, isso ocorre quase sempre, tendo poucas execoes. Isso ocorrre pois ao criar uma function dentro de uma funcion ela tem <strong>escopo local</strong>, functionando apenas onde foi criada.</figcaption>
+            </figure>
+
+            <h3>Exemplo Maneira Correta</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy.png" alt="Exemplo 02">
+                </picture>
+                <figcaption>Essa seria a maneira correta, onde foi criado uma <strong>variavel</strong> com <strong>escopo global</strong>, dessa forma ela basicamente pode ser usada dentro de qualquer funcao, ja que foi criada fora de todas as <strong>function</strong></figcaption>
+            </figure>
+
+            <h3>Importante</h3>
+            <p>
+                Devemos tomar cuidado ao criar uma <strong>variável dentro de uma função</strong> com o mesmo nome de uma <strong>variável global</strong>, pois o<strong> JavaScript dá prioridade ao escopo local</strong>.
+            </p>
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../12_funcoes_dentro_d_funcoes/index.html" class="next-aula">Proxima Aula - Funcoes Dentro de Funcoes</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>

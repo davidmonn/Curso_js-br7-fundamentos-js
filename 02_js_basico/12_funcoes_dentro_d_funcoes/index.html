@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Funcoes Dentro de Funcoes</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,17 +15,17 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../11_variaveis_dentro_d_funcoes/index.html" class="back-aula">Aula Anterior - Variaveis Dentro de Funcoes</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Funcoes Dentro de Funcoes</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Aqui iremos ver como criar funcoes dento de outras funcoes e entender para que servem.
             </p>
 
         </section>
@@ -33,15 +33,71 @@
         <article class="curso-ex">
 
             <h3>Explicacao</h3>
+            <p>
+                Nesse exemplo iremos usar uma function para calcular a raiz quadrada de dois valores e fazer a soma, ficando da seguinte forma em nosso <strong>JS</strong>:
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="Exemplo 1">
+                </picture>
+                <figure>Dessa forma estamos usando duas function, mas podemos simplifica-la e colocar em apenas uma.</figure>
+            </figure>
+            <h3>Function dentro de Function</h3>
+            <p>
+                Com essa mesmo function feita, podemos simplificar nosso codigo colocando uma function dentro da outra para podermos organizar melhor nosso codigo.
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy.png" alt="Exemplo 02">
+                </picture>
+                <figure>Dessa forma temos um codigo mais organizado.</figure>
+            </figure>
 
-            <h3>Mais informacoes</h3>
+            <h3>Quando usar:</h3>
+            <ul>
+                <li>
+                    A função interna só será usada ali
+                </li>
+                <li>
+                    Você quer separar uma lógica menor dentro de uma maior
+                </li>
+                <li>
+                    Ajudar na legibilidade e manutenção do código
+                </li>
+            </ul>
+
+            <h3>Vantagens:</h3>
+            <ul>
+                <li>
+                    Código mais organizado
+                </li>
+                <li>
+                    Menos nomes no escopo global
+                </li>
+                <li>
+                    Mais controle sobre o que pode ou não ser acessado
+                </li>
+            </ul>
+
+            <h3>Quando nao usar:</h3>
+            <ul>
+                <li>
+                    A função precisa ser usada em vários lugares
+                </li>
+                <li>
+                    A lógica é genérica ou reutilizável
+                </li>
+                <li>
+                    Deixar funções muito profundas (uma dentro da outra da outra…)
+                </li>
+            </ul>
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../13_introducao_a_array/index.html" class="next-aula">Proxima Aula - Introducao a Array</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
