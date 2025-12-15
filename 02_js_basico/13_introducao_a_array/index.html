@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Introducao a Arrary</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,17 +15,17 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../12_funcoes_dentro_d_funcoes/index.html" class="back-aula">Aula Anterior - Funcoes Dentro de Funcoes</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Introducao a Arrary</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Aqui iremos comecar a entender um array. Muito util e usada para podermos armazenar multiplos valores dentro de uma unica "Variavel", no caso uma <strong>array</strong>.
             </p>
 
         </section>
@@ -33,15 +33,81 @@
         <article class="curso-ex">
 
             <h3>Explicacao</h3>
+            <p>
+                Nela podemos salvar coisas como por exemplo, uma lista de cores, produtos, nomes e etc.
+            </p>
 
             <h3>Mais informacoes</h3>
+            <p>
+                Quando queremos criar apenas um valor, podemos apenas armazena-lo em uma variavel. Agora quando temos uma lista para armazenar, iremos precisar de um <strong>array</strong>.
+            </p>
+
+            <h3>Criando Array:</h3>
+            <p>
+                Para criarmos um <strong>array</strong>, e parecido com uma <strong>variavel</strong>, porem, nele usamos [''] e separados por virgula. Ex: <strong>let colors = ['Azul', 'Vermelho', 'Branco', 'Preto', 'Cinza', 'Green'];</strong>
+            </p>
+
+            <h3>Ficando da seguinte forma:</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="Ex 01">
+                </picture>
+            </figure>
+
+            <h3>Exibindo um Array</h3>
+            <p>
+                Temos algumas maneiras de exibir uma <strong>array</strong>, pode ser exibido tudo de uma vez, ex: <strong>console.log(colors);</strong> ou tambem podemos selecionar apenas um dos valores da seguinte forma por exemplo: console.log(colors[1]); Nesse caso, como usamos o valor 1, ele ira selecionar o <strong>vermelho</strong>, pois todo <strong>array</strong>, comeca a contagem pelo 0
+            </p>
+
+            <h3>Importante lembrar</h3>
+            <p>
+                Podemos tambem criar arrays dentro de arrays, podemos basicamente pegar o nome de um array, e colocar essa variavel da array dentro de nossa array, exemplo:
+                <picture>
+                    <img src="assets/imgs/image copy 2.png" alt="ex03">
+                </picture>
+            </p>
+            <h3>Array dentro de array:</h3>
+            <p>
+                Tambem temos a opcao de fazer um array, dentro de outro array. Ficando da seguinte forma:
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 4.png" alt="ex03">
+                </picture>
+                <figcaption>Ambos sao os mesmos, apenas o abaixo esta um pouco mais organizado.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 3.png" alt="ex04">
+                </picture>
+            </figure>
+
+            <h3>Exibindo arrays dentro de arrays</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 5.png" alt="ex05">
+                </picture>
+                <figure>
+                    <ul>
+                        <li>
+                            comidas[1] → seleciona o array de frutas
+                        </li>
+                        <li>
+                            [2] → seleciona "maça" dentro desse array
+                        </li>
+                        <li>
+                            Resumindo:  O índice 1 acessa o array interno das frutas, e o índice 2 acessa o valor "maça" dentro desse array.
+                        </li>
+                    </ul>
+                </figure>
+            </figure>
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../14_operacoes_basicas_d_array/index.html" class="next-aula">Proxima Aula - Operacoes Basicas de Array</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
