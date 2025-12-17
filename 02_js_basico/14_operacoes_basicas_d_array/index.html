@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Operacoes Basicas em Array</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -21,20 +21,64 @@
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Operacoes Basicas em Array</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Agora iremos ver algumas coisas basicas que podemos estar fazendo com array.
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h3>Exemplo usado:</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="Ex 01">
+                </picture>
+                <figcaption>Nessa aula estamos usando esse array de exemplo.</figcaption>
+            </figure>
 
-            <h3>Mais informacoes</h3>
+            <h3>length</h3>
+            <p>
+                Usado para podermos estar verificando a quantidade de itens dentro de um <strong>array</strong>. Para usarmos podemos fazer da seguinte forma: <br>
+                <code><strong>console.log(`Total de ingredientes: ${ingredientes.length}`);</strong></code>
+            </p>
+
+            <h3>Adicionar mais itens</h3>
+            <p>
+                Se soubermos a quantidade de itens dentro de um array, podemos estar adicionando mais itens, utilizando o nome da variavel do array e o numero em que sera adicioanado, ficando da seguinte forma: <br>
+                <code>
+                    ingredientes[6] = 'Chocolate';
+                </code>
+            </p>
+            <p>
+                Se por acaso escolhermos o numero errado, aquele espaco ira pular para o proximo, ficando com o valor de <strong>empty (vazio)</strong>.
+            </p>
+
+            <p>
+                <strong>Obs:</strong> essa e uma das formas menos utilizidas usada. Recomendado fazer de outra forma a adicao.
+            </p>
+
+            <h3>Adicionar mais Itens Forma Certa (push):</h3>
+            <p>
+                Para podermos adicionar mais itens dentro de nosso array podemos fazer da seguinte forma: <br>
+                <code>ingredientes.push('Chocolate')</code>
+            </p>
+            <p>
+                Essa e a maneira recomendada, utilizando da funcao <strong>push</strong>
+            </p>
+
+            <h3>funcao pop</h3>
+            <p>
+                Usada para basicamente remover o ultimo item de nosso array
+            </p>
+
+            <h3>funcao shift</h3>
+            <p>
+                Ao contrario da funcao <strong>pop</strong>, usado para remover o primeiro item de nossa lista.
+            </p>
 
         </article>
 

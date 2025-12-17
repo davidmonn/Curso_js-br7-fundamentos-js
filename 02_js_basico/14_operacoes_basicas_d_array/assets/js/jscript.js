@@ -1,16 +1,16 @@
-let profession = "vendedor";
+let ingredientes = [
+    'Agua',
+    'Farinha',
+    'Ovo',
+    'Manteiga',
+    'Leite',
+    'Acucar'
+];
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
+// pop = remove o ultimo
+// shift = remove o primeiro
 
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
-}
+ingredientes.push('Chocolate');
+ingredientes.pop();  
+
+console.log(`Total de ingredientes: ${ingredientes.length}`);
