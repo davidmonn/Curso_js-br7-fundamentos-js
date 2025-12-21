@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>O Loop For</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,33 +15,85 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../18_funcoes_dentro_d_objetos/index.html" class="back-aula">Aula Anterior - Funcao Dentro de Objeto</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>O Loop For</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Loop basicamente em todas as <strong>linguagens de programacao</strong> e quando queremos que um codigo seja executado diversas vezes.
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h3>Exemplo</h3>
+            <p>
+                Quando criamos uma lista de produtos com um array, contendo cada produto, onde nele ira ter suas informacoes basicas como: preco, quantidade, validade e etc. Se quisermos exibir na tela as <strong>caracteristicas</strong> de todos os produtos, iremos precisar criar um <strong>loop</strong>, 
+            </p>
 
-            <h3>Mais informacoes</h3>
+            <h3>Como Fazer Loop</h3>
+            <p>
+                Temos varias formas que podem ser feitas, uma delas e usando o <strong>for</strong>.
+            </p>
+            
+            <h3>Loop For</h3>
+            <p>
+                É basicamente usado para percorrer cada posicao do <strong>array</strong> do inicio ao fim, executando uma acao para cada item
+            </p>
+            
+            <h3>Criand For:</h3>
+            <p>
+                Muito semelheante ao criarmos um <strong>if</strong>. No for temos que colocar <strong>3 coisas</strong> inicio do <strong>contador</strong>, <strong>condicional (para que o codigo continue executando)</strong> e por ultimo o <strong>n++</strong> e a variavel + 1, pois seguira a ordem basicamente da seguinte forma: variavel iniciara em 0, enquanto a variavel for menor que 10 ela ira continuar executando e por ultimo apos ira acrescentando n + 1
+                 Ficando da seguinte forma: <br>
+                <code>for(let n = 0; n < 10; n++){ <br> <br>
+                 }</code>  :
+            </p>
+
+            <figure>
+                <caption>
+
+                </caption>
+            </figure>
+
+
+            <h3>Resumindo No for precisamos informar três partes:</h3>
+            <ul>
+                <li>
+                    Início do contador
+                </li>
+                <li>
+                    Condição (enquanto for verdadeira, o código continua executando)
+                </li>
+                <li>
+                    Incremento (n++, que soma +1 a cada volta).
+                </li>
+            </ul>
+            
+                <h3>A ordem de execução é:</h3>
+            <ul>
+                <li>
+                    A variável começa em 0
+                </li>
+                <li>
+                    Enquanto n < 10, o bloco será executado
+                </li>
+                <li>
+                    Ao final de cada execução, n recebe +1
+                </li>
+            </ul>
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../20_dando_loop_em_arrays/index.html" class="next-aula">Proxima Aula - Dando Loop em Arrays</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
