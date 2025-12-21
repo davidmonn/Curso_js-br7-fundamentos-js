@@ -1,16 +1,12 @@
-let profession = "vendedor";
+let pessoa = {
+    nome: "David",
+    sobrenome: "Monteiro",
+    idade: 28,
+    nomeCompleto: function () {
+        //return this.nome + ' ' + this.sobrenome; 
+        //Ou
+        return `${this.nome} ${this.sobrenome}`;
+    }
+};
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
-
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
-}
+console.log(pessoa.nomeCompleto());

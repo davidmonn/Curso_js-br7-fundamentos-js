@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Funções Dentro de Objetos</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -21,20 +21,66 @@
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Funções Dentro de Objetos</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Aqui iremos ver como criar <strong>funcoes</strong> dentro de <strong>array</strong>, para isso iremos usar como suposicao uma pessoa.
             </p>
+
+            <h3>Exemplo do objeto criado:</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="Exemplo Objeto">
+                </picture>
+            </figure>
 
         </section>
 
         <article class="curso-ex">
 
             <h3>Explicacao</h3>
+            <p>
+                Quando criamos um objeto com por exemplo <strong>nome</strong> e <strong>sobrenome</strong>, se quisermos exibir esse valor podemos fazer da seguinte forma: <br>
+                <code>console.log(pessoa.nome + ' ' + pessoa.sobrenome);</code>
+            </p>
+
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy.png" alt="Exemplo exibir">
+                </picture>
+            </figure>
+
+            <p>
+                Porem podemos tambem fazer de uma forma diferente, fazendo com que o <strong>objeto</strong> nos gere o nome completo, criando uma <strong>funcao</strong>, exemplo
+            </p>
+
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 2.png" alt="Exemplo 2">
+                </picture>
+                <figcaption>Como podemos observar e foi mencionado, não precisamos dar um nome à função, pois ela ficará associada à chave (propriedade) do objeto.Essa chave passa a ser usada como o nome do método ao acessá-lo. Nesse caso ficou como <strong>nomeCompleto</strong></figcaption>
+            </figure>
 
             <h3>Mais informacoes</h3>
+            <p>
+                Quando criamos uma funcao, normalmente a damos um nome, porem quando usamos em um objeto, ja demos um nome para ela, que no caso seria nesse exemplo usado o <strong>nomeCompleto</strong>.
+            </p>
+
+            <h3>this</h3>
+            <p>
+                Com o <strong>this</strong>, se refere ao proprio <strong>objeto</strong> ou seja, proprio item. Isso e basicamente o mesmo que termos usado a <strong>variavel pessoa (nome do objeto usado no exemplo)</strong>, se no caso usassemos uma variavel normal como let, nao funcionaria pois como esta dentro de uma function, ela tem um escopo interno.
+            </p>
+
+            <h3>Como usar uma funcao dentro do objeto</h3>
+            <p>
+                Podemos fazer basicamente da seguinte forma:
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 3.png" alt="Exibindo func objeto">
+                </picture>
+            </figure>
 
         </article>
 
