@@ -1,16 +1,11 @@
-let profession = "vendedor";
+let numero = 0;
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
+while(numero < 10) {
+    console.log(`O proximo numero é: ${numero}`)
+    numero++;
+}
 
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
+// Com for ficaria da seguinte forma:
+for(let numero = 0; numero < 10; numero++) {
+    console.log(`Proximo numero usando for: ${numero}`);
 }

@@ -108,6 +108,10 @@ h3 {
     font-family: var(--font2);
 }
 
+
+.separado {
+    margin-bottom: 20px;
+}
 .next-aula,
 .back-aula {
     color: aqua;
