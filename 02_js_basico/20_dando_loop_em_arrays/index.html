@@ -15,7 +15,7 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../19_o_loop_for/index.html" class="back-aula">Aula Anterior - Loop For</a>
 
     <main>
 
@@ -25,23 +25,139 @@
             
             <h2>Intro:</h2>
             <p>
-                
+                Agora iremos ver como dar <strong>loop</strong> em um <strong>array</strong>, atualmente utilizamos muito o <strong>loop</strong> quando estamos criando sistemas, muitas vezes o usando em <strong>arrays</strong>.
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h3>length com for</h3>
+            <p>
+                Algo muito util de estarmos usando, para caso de criarmos uma lista que estara em constante atualizacao, podemos estar utilizando o <strong>length</strong>, para nao precisarmos passar um valor fixo e dar como undefined. Ficando basicamente da seguinte forma: <br>
+                <code>for(let n = 0; n < cores.length; n++){}</code>
+            </p>
+            <h3>Imagem de Exemplo - Usando For com Length</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="For e Length">
+                </picture>
+            </figure>
 
-            <h3>Mais informacoes</h3>
+            <h3>For</h3>
+            <p>
+                O <strong>for</strong> no <strong>JS</strong> tem diferentes formas de ser usado, essa que foi mostrada foi apenas uma das formas. Temos uma forma mais facil quando queremos fazer <strong>loop</strong> em um <strong>array</strong>, da seguinte forma: <br>
+                <code>for(let i in cores){ <br>
+                console.log(cores[i]); <br>
+                }</code>
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy.png" alt="Ex For In">
+                </picture>
+                <figcaption>Dessa forma conseguimos ter o mesmo resultado com menos codigo</figcaption>
+            </figure>
+
+            <h3>Explicacao let i in</h3>
+            <ul>
+                <li>
+                    <strong>let in:</strong> estamos basicamente criando a variavel <strong>i</strong>.
+                </li>
+                <li>
+                    <strong>in:</strong> significa para cada indice dentro de nossa array no caso <strong>cores</strong>.
+                </li>
+                <li>
+                    <strong>cores[i]:</strong> acessa o valor usando o indice.
+                </li>
+            </ul>
+            <h3>Let in I com function</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 6.png" alt="function-upperCase">
+                </picture>
+                <figcaption>
+                    Dessa forma, conseguimos usar a função toUpperCase() para converter o valor da propriedade nome de cada objeto do array para letras maiúsculas. Com isso, essa propriedade passa a ser uma string em maiúsculas, podendo ser usada diretamente, sem necessidade de outras conversões. <br> <br>
+                    <strong>Resumindo:</strong> toUpperCase() converte o valor de nome para string maiúscula, alterando diretamente o array.
+                </figcaption>
+            </figure>
+
+
+            <h3>Outra forma com mesmo resultado:</h3>
+            <p>
+                Ficando da seguinte forma: <br>
+                <code>
+                for(let cor for cores) { <br>
+                    console.log(cor);
+                }
+                </code>
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 2.png" alt="for of">
+                </picture>
+                <figcaption>Quando usamos o cor of cores <strong>(se refere diretamente ao valor dentro de cores, porque o of percorre os valores)</strong>.</figcaption>
+            </figure>
+
+
+            <h3>Uso de For com Array e Objeto</h3>
+            <p>
+                Aqui iremos ver um exemplo de como podemos usar o uso de <strong>for</strong> com <strong>array</strong> e <strong>objeto</strong>. Ficando da seguinte forma nosso <strong>Arry</strong>: <br>
+                <img src="assets/imgs/image copy 3.png" alt="">
+            </p>
+
+            <h3>Exemplo de exibicao com for:</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 4.png" alt="array-object-for">
+                </picture>
+                <figcaption>
+                    Como podemos observar, fizemos um array, com objeto e usamos o for para passar pelos <strong>valores</strong> e assim exibindo no console.log.
+                </figcaption>
+            </figure>
+            
+            <h3>Loop Letras Maiusculas</h3>
+            <p>
+                Com <strong>loops</strong> podemos <strong>percorrer dados e tratar valores</strong>, como <strong>converter</strong> textos para letras maiúsculas ou minúsculas.
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 5.png" alt="function-upperCase">
+                </picture>
+                <figcaption>
+                    Podemos observar que criamos uma variavel <strong>maiuscula</strong> para ela receber o cor2.nome (nesse caso nosso objeto) ja com a conversao maiuscula. Por conta disso quanto a usamos no <strong>console.log</strong> apenas usamos a <strong>variavel</strong> sem precisar do <strong>.nome</strong> pois ela nao e mais um objeto e sim um <strong>variavel(string)</strong> que recebeu a "atualizacao" que fizemos daquele objeto. <br> <br>
+                    Resumindo: <br>
+                    Podemos observar que criamos a variável maiuscula para receber o valor de cor2.nome já convertido para letras maiúsculas. <br>
+                    Por conta disso, ao usá-la no console.log, utilizamos apenas a variável, sem precisar do .nome, pois ela não é mais um objeto, e sim uma string que recebeu a “atualização” feita a partir daquele objeto.
+
+                </figcaption>
+            </figure>
+
+
+            <h3>Diferenca For in e For of:</h3>
+            <ul>
+                <li>
+                    <strong>for in:</strong> percorre <strong>indices</strong> (Índice → posição do elemento no array. Ex: 0, 1, 2...).
+                </li>
+                <li>
+                    <strong>for of:</strong> percorre <strong>valores</strong> (Valor → conteúdo armazenado nessa posição. Ex: string, número, objeto, etc.).
+                </li>
+            </ul>
+
+
+            <h3>IMPORTANTE:</h3>
+            <p class="junto">
+                Quando usamos <strong>for (let cor of cores)</strong>, a variável <strong>cor recebe o valor do array</strong>. Como o <strong>array</strong> cores possui <strong>objetos</strong>, ao usar cor devemos tratá-lo como um objeto, por isso acessamos suas propriedades com <strong>cor.nome</strong> .
+            </p>
+            <p class="junto">
+                Já quando usamos <strong>for (let i in cores)</strong>, a variável <strong>i</strong> representa o <strong>índice</strong> do <strong>array</strong>. Nesse caso, <strong>o valor ainda está dentro do array</strong>, então precisamos acessá-lo usando <strong>cores[i], ficando cores[i].nome</strong>.
+            </p>
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../21_loop_while/index.html" class="next-aula">Proxima Aula - Loop While</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
