@@ -15,33 +15,112 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../22_exercicio_d_loop_5/index.html" class="back-aula">Aula Anterior - Exercicio de Loop</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Fucoes de Array</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+               Quando estamos lidando com <strong>arrays</strong>, temos que aprender muitas coisas uteis e aqui iremos ver algumas funcoes basicas, que podemos executar dentro do proprio <strong>array</strong>.
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h3>Exemplo</h3>
+            <p>
+                Para nosso exemplo teremos o seguinte array:
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="Exemplo 1">
+                </picture>
+            </figure>
+            <p>
+                A partir do momento que quiamos um <strong>array</strong>, junto dele vem algumas <strong>funcoes</strong> que podemos executar no proprio <strong>array</strong>.
+            </p>
 
-            <h3>Mais informacoes</h3>
+            <h3>Explicacao</h3>
+            <ul>
+                <li>
+                    <strong>console.log</strong>
+                    <ul>
+                        <li>
+                            Se usarmos apenas o <strong>console.log</strong> com a <strong>array</strong> ele nos mostra o array.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>length</strong>
+                    <ul>
+                        <li>
+                            Agora se usamos por exemplo <strong>console.log(fruits.length)</strong> nesse exemplo mostrado, ele nos trara o resultado sendo 4, significando que temos 4 itens em nossa <strong>lista array</strong>.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>push()</strong>
+                    <ul>
+                        <li>
+                            Adiciona mais itens ao nosso <strong>array</strong>, devemos lembrar que ele nao exclui os itens anteriores, apenas adiciona mais um. Ex de uso: <strong>console.log(fruits.push('manga'))</strong> com isso agora ele nos retornara 5.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>pop()</strong>
+                    <ul>
+                        <li>
+                            Deleta o ultimo item de nosso <strong>array</strong>, 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>shift()</strong>
+                    <ul>
+                        <li>
+                            Deleta o primeiro item de nosso <strong>array</strong>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>join()</strong>
+                    <ul>
+                        <li>
+                            Serve basicamente para juntar, pega um <strong>array</strong> converte para <strong>string</strong> e separa da forma que deixamos em nosso join. Ex: <strong>console.log(fruits.join(' '))</strong>, nesse caso dentro de nossa aspas, colocamos um <strong>espaco</strong> com isso ele ira separar com <strong>espaco</strong>.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Alterar item da lista</strong>
+                    <ul>
+                        <li>
+                            Podemos tambem alterar um item da lista. Ex se fizemos da seguinte forma <strong>fruits[0] = 'Pera'</strong> com isso nossa lista nao ira mais comecar com Maca mas com Pera. Ou seja, substituimos a Maca pela Pera.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>fruits [fruits.length - 1] = 'Kiwi'</strong>
+                    <ul>
+                        <li>
+                            Dessa forma tambem substituimos nossa lista mas nesse caso sera alterado <strong>laranja</strong> para <strong>pera</strong>, pois seria o ultimo item -1.
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+            
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../24_ordenacao_d_array/index.html" class="next-aula">Proxima Aula - Ordenacao de Array</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>

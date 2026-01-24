@@ -68,7 +68,7 @@ main p {
 
 main ul {
     background-color: aqua;
-    display: inline-block;
+    /* display: inline-block; */
     border-radius: 15px;
     padding: 20px;
 }
