@@ -1,16 +1,19 @@
-let profession = "vendedor";
+// 1. Faca um loop que mostre todas as frutas
+let fruits = ['Maça', 'Uva', 'Banana'];
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
+for(let i of fruits) {
+    console.log(i);
+};
 
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
+//Ou
+for(let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
 }
+
+
+// 2. Conte de 1 até 100 atraves de um while
+let i = 1;
+while(i <= 100) {
+    console.log(i);
+    i++
+};
