@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Iteracao de Array'</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -21,20 +21,89 @@
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Iteracao de Array'</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Aqui iremos ver alguns metodos de interacao ou iteracao, dependendo de como preferir chamar, com o array. Usamos a iteracao para ter o <strong>array</strong> como referencia para podermos fazer algumas coisas.
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h2>Opcoes</h2>
 
-            <h3>Mais informacoes</h3>
+            <h3>Filter</h3>
+            <p class="junto">
+                Servindo para podermos filtrar alguma coisa. Exemplo: se tivermos um <strong>array</strong> de frutas, e queremos filtrar apenas as frutas que tem apenas mais de 4 letras. Como usa-lo: <code>fruits.filter()</code>
+            </p>
+            <p class="junto">
+                <strong>Importante:</strong> o filter ao ser usado, gera um novo <strong>array</strong>, entao iremos precisar criar uma <strong>variavel</strong> para poder salvar.
+            </p>
+            <p class="junto">
+                <strong>Filter Conclusa:</strong> com o filter, temos uma forma mais prática de percorrer um array. Nós criamos a regra (a função), e o filter fica encarregado de:
+            </p>
+            <ul>
+                <li>
+                    percorrer o array
+                </li>
+                <li>
+                    aplicar essa regra em cada item
+                </li>
+
+                <li>
+                    montar um novo array com os valores aprovados
+                </li>
+            </ul>
+            <p class="junto">
+                Resumindo: O filter percorre o array automaticamente. Nós apenas definimos a condição que cada item precisa atender para entrar no array. O filter() pode receber até 3 parâmetros na função callback: <strong>value → o próprio item do array, index → a posição (índice) do item, array → o array completo (caso precisemos comparar)</strong>
+            </p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image.png" alt="Exemplo Filter">
+                </picture>
+            </figure>
+
+            <h3>every e some</h3>
+            <p class="junto">
+                <strong>every</strong> e <strong>some</strong> não são feitos para passar mensagens ao usuário, e sim para realizar <strong>verificações</strong> e <strong>validar</strong> <strong>condições</strong>. Ou seja, retornam apenas <strong>true</strong> (verdadeiro) ou <strong>false</strong> (falso). 
+            </p>
+            <p class="junto">
+                Um exemplo seria verificar se as frutas possuem mais que 3 letras. Podemos usar o <strong>every</strong> (todos): se <strong>todas</strong> as frutas tiverem mais que 3 letras, o resultado será <strong>true</strong>. O every funciona de forma parecida com o operador lógico <strong>&&</strong>, onde <strong>todas as condições precisam ser verdadeiras</strong> para o resultado final ser <strong>true</strong>.
+            </p>
+            <p class="junto">
+                <strong>some(algum)</strong> para que ele possa dar <strong>true</strong> precisa que apenas algum item de nossa condicional seja verifida como <strong>true</strong>
+            </p>
+
+            <h3>includes()</h3>
+            <p class="junto">
+                O <strong>método includes()</strong> serve para <strong>verificar</strong> se um valor <strong>existe</strong> dentro de um <strong>array (ou dentro de uma string)</strong>. <strong>true</strong> → se o valor existir, <strong>false</strong> → se o valor não existir
+            </p>
+
+            <h3>Exemplo every() :</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy 2.png" alt="Exemplo every">
+                </picture>
+            </figure>
+
+            <h3>Exemplo some() :</h3>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/image copy.png" alt="Exemplo some">
+                </picture>
+            </figure>
+
+            <h2>Resumo rapido:</h2>
+            <ul>
+                <li>
+                    <strong>every(todos)</strong> → <strong>todos</strong> precisam passar
+                </li>
+                <li>
+                    <strong>some(algum)</strong> → pelo <strong>menos um</strong> precisa passar (parecido com <strong>||</strong>)
+                </li>
+            </ul>
 
         </article>
 
