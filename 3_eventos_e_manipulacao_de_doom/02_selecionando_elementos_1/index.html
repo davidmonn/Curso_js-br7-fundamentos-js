@@ -15,33 +15,102 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../01_oque_e_doom/index.html" class="back-aula">Aula Anterior - Oque e DOM</a>
 
     <main>
 
-        <!-- Introdução -->
-        <section class="intro">
-            <h1>Selecionando Elementos 01</h1>
-            
-            <h2>Intro:</h2>
-            <p>
-                    
-            </p>
+    <!-- Introdução -->
+    <section class="intro">
+        <h1>Selecionando Elementos 01</h1>
+        
+        <h2>Intro:</h2>
+        <p>
+            Agora veremos um dos itens essenciais quando estamos tratando de <strong>manipulação de DOM</strong>.
+        </p>
 
-        </section>
+    </section>
 
-        <article class="curso-ex">
+    <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+        <h3>Explicação de Manipulação DOM</h3>
+        <p class="junto">
+            Se quisermos fazer algo como, por exemplo, mudar o texto de uma <strong>tag h1</strong> com <strong>JavaScript</strong>, podemos ter um <strong>botão</strong> onde, ao clicar, ele muda o texto para outro.
+        </p>
+        <p class="junto">
+            Antes de qualquer alteração, precisamos identificar o <strong>elemento que queremos modificar</strong>.  
+            Através do <strong>JavaScript</strong>, iremos navegar no <strong>DOM</strong> para encontrar esse <strong>elemento</strong>.
+        </p>
+        
+        <h3>Na prática:</h3>
+        <p>
+            Para começar e ficar mais fácil de compreender, iremos usar o <strong>console.log</strong>, onde podemos ter uma visualização melhor.
+        </p>
+        <p class="junto">
+            Quando usamos <strong>document</strong>, ele é um <strong>objeto</strong> onde temos acesso a várias <strong>funções relacionadas ao documento</strong> <strong>(o conteúdo da página)</strong>.
+        </p>
 
-            <h3>Mais informacoes</h3>
+        <p class="junto">
+            Existem dois objetos <strong>principais</strong>: <strong>window</strong> e <strong>document</strong>.
+        </p>
 
-        </article>
+        <p>
+            <strong>window:</strong> objeto relacionado à <strong>janela inteira do navegador</strong>, como URL, tamanho da tela, alert, etc.
+        </p>
 
-    </main>
+        <p>
+            <strong>document:</strong> objeto ligado ao <strong>conteúdo do site (HTML)</strong>.
+        </p>
+
+        <h3>document.</h3>
+        <p>
+            Quando usamos <strong>document.</strong> (com ponto no final), temos acesso a <strong>funções do documento</strong>.  
+            Uma delas serve para <strong>selecionar elementos</strong>.  
+            Existem várias formas de seleção, como por <strong>tag</strong>, <strong>class</strong>, <strong>id</strong> ou <strong>combinações</strong>.
+        </p>
+
+        <h3>Aprendendo Funções document</h3>
+        <p>
+            <strong>document.getElementsByTagName()</strong>: ao usar isso, ele retorna uma <strong>lista de elementos (parecido com array)</strong>, ficando da seguinte forma:
+        </p>
+
+        <figure>
+            <picture>
+                <img src="assets/imgs/image.png" alt="console.log getElements">
+            </picture>
+        </figure>
+
+        <p>
+            Nessa <strong>lista</strong>, teremos todos os <strong>h1</strong> usados na página.  
+            Se existir mais de um <strong>elemento</strong>, ao passar o mouse no console, podemos ver todos.  
+            Exemplo quando temos mais de um <strong>elemento</strong> na seleção:
+        </p>
+
+        <figure>
+            <picture>
+                <img src="assets/imgs/image copy.png" alt="Exemplo 02 - mais de um elemento">
+            </picture>
+        </figure>
+
+        <h3>Como acessar para modificação:</h3>
+        <p>
+            Ao selecionarmos um <strong>elemento</strong>, se houver mais de um, podemos salvar em uma variável:  
+            <code>let elementos = document.getElementsByTagName("h3")</code>  
+            Com isso ira retornar uma <strong>lista</strong>, podemos acessar o primeiro item com: <code>elementos[0]</code>.
+        </p>
+
+        <figure>
+            <picture>
+                <img src="assets/imgs/image copy 2.png" alt="Selecionando">
+            </picture>
+        </figure>
+
+    </article>
+
+</main>
+
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../03_selecionando_elementos_2/index.html" class="next-aula">Proxima Aula - Selecionando Elementos 02</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
