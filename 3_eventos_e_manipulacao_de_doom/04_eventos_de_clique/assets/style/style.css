@@ -66,9 +66,10 @@ main p {
     margin: 20px 0;
 }
 
-main ul {
+main ul,
+ol {
     background-color: aqua;
-    display: inline-block;
+    display: block;
     border-radius: 15px;
     padding: 20px;
 }
@@ -137,4 +138,8 @@ h3 {
 .junto {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+button {
+    padding: 7px;
 }
