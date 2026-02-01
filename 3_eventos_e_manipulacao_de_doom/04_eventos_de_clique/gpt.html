@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Clique</title>
+
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegação entre aulas -->
+    <a href="../03_selecionando_elementos_2/index.html" class="back-aula">Aula Anterior - Selecionando Elementos 02</a>
+
+    <main>
+
+    <!-- Introdução -->
+    <section class="intro">
+        <h1>Eventos de Clique</h1>
+        
+        <h2>Intro:</h2>
+        <p>
+            Evento é quando algo acontece no navegador. No <strong>JavaScript</strong>, podemos reagir a eventos do usuário, 
+            como cliques, teclado, movimento do mouse, carregamento da página, entre outros.
+        </p>
+
+        <p>
+            No caso de <strong>eventos de clique</strong>, quando clicamos em um botão, ocorrem três etapas:
+        </p>
+
+        <ul>
+            <li><strong>mousedown</strong> → quando o botão do mouse é pressionado.</li>
+            <li><strong>mouseup</strong> → quando o botão do mouse é solto.</li>
+            <li><strong>click</strong> → quando o pressionar e soltar acontecem juntos.</li>
+        </ul>
+
+    </section>
+
+    <article class="curso-ex">
+
+        <h3>Entendendo Eventos de Clique</h3>
+        <p>
+            Existem duas formas principais de executar código quando um <strong>evento de clique</strong> acontece:
+        </p>
+
+        <ol>
+            <li>
+                <strong>onclick (direto no HTML)</strong>:
+                <ul>
+                    <li>
+                        Usamos o atributo <code>onclick</code> dentro da tag HTML para chamar uma função do JavaScript.
+                        Essa forma é mais simples, mas não é muito recomendada em projetos grandes.
+                    </li>
+                    <li>
+                        Exemplo:
+                        <button class="botao one" onclick="criou()">Clique Teste</button> <br>
+                        Ex: <br>
+                        <figure>
+                            <picture>
+                                <img src="assets/imgs/image.png" alt="Exemplo onclick" style="width: 950px;">
+                            </picture>
+                        </figure>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Através do JavaScript (addEventListener)</strong>
+                <ul>
+                    <li>
+                        Nesse modo, adicionamos o evento diretamente no <strong>JavaScript</strong>, sem misturar código JS no HTML.
+                        Primeiro selecionamos o elemento e depois usamos:
+                        <code>addEventListener("click", criou)</code>
+                    </li>
+
+                    <li>
+                        O método <strong>addEventListener</strong> recebe dois parâmetros:
+                        <ul>
+                            <li>O nome do evento (ex: "click").</li>
+                            <li>A função que será executada.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Também podemos criar a função diretamente dentro do parâmetro (função anônima ou arrow function).
+                    </li>
+
+                    <button class="botao two">Clique Teste</button> <br>
+                    Ex: <br>
+
+                    <figure>
+                        <picture>
+                            <img src="assets/imgs/function_criou.png" alt="Function Criou">
+                        </picture>
+                        <figcaption>
+                            O HTML é basicamente o mesmo, apenas mudamos a class para <strong>class="botao two";</strong>
+                        </figcaption>
+                    </figure>
+
+                    <img src="assets/imgs/dentro_do_parametro.png" alt="arrow function" style="width: 950px;">
+                    Função dentro do parâmetro, pode ser usada tanto normal quanto como mostrado acima com arrow function.
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Mais informações</h3>
+        <p>
+            Ambas as formas funcionam, porém <strong>addEventListener</strong> é mais profissional e usado em projetos reais, 
+            pois separa o HTML do JavaScript.
+        </p>
+
+        <h3>Resumo Rápido</h3>
+        <ul>
+            <li><strong>onclick</strong> → simples, mas não recomendado em projetos grandes.</li>
+            <li><strong>addEventListener</strong> → forma profissional e mais flexível.</li>
+            <li><strong>click</strong> → evento mais usado para interação com o usuário.</li>
+        </ul>
+
+    </article>
+
+    <a href="index.html" class="next-aula" style="color: red;">Voltar</a>
+
+</main>
+
+<!-- Navegação -->
+<a href="../05_manipulando_elementos_1/index.html" class="next-aula">Proxima Aula - Manipulando Elementos 01</a>
+
+<!-- Script -->
+<script src="assets/js/jscript.js"></script>
+
+</body>
+</html>

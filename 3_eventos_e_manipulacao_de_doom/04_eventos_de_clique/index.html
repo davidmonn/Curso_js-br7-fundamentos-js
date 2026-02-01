@@ -19,67 +19,81 @@
 
     <main>
 
-        <!-- Introdução -->
-        <section class="intro">
-            <h1>Eventos de Clique</h1>
-            
-            <h2>Intro:</h2>
-            <p>
-                Evento e quando algo acontece e no <strong>JS</strong> como estamos falando sobre <strong>eventos de clique</strong> é quando acontece algum clique por exemplo em um botao, basicamente ao clicarmos tivemos dois <strong>eventos</strong> o de <strong>press down (precionar o clique )</strong> e o de <strong>press up (soltar o clique)</strong>.
-            </p>
+    <!-- Introdução -->
+    <section class="intro">
+        <h1>Eventos de Clique</h1>
+        
+        <h2>Intro:</h2>
+        <p>
+            Evento é quando algo acontece. No <strong>JS</strong>, eventos de clique acontecem quando clicamos em algo, como um botão. 
+            Ao clicar, temos três eventos principais: <strong>mousedown</strong> (pressionar o clique), <strong>mouseup</strong> (soltar o clique) 
+            e <strong>click</strong> (a combinação dos dois).
+        </p>
 
-        </section>
+    </section>
 
-        <article class="curso-ex">
+    <article class="curso-ex">
 
-            <h3>Entendo Eventos de Clique</h3>
-            <p>
-                Existem duas forma de fazermos algo quando um <strong>evento de clique</strong> acontece
-            </p>
+        <h3>Entendendo Eventos de Clique</h3>
+        <p>
+            Existem duas formas de fazermos algo quando um <strong>evento de clique</strong> acontece:
+        </p>
 
-            <ol>
-                <li>
-                    <strong>onclick</strong>:
-                    <ul>
-                        <li>
-                            Com esse atributo, normalmente usamos para colocar o nome de uma funcao onde criamos com o <strong>JS</strong>. Ex:
-                             <button class="botao one" onclick="criou()">Clique Teste</button> <br>
-                            Ex: <br>
-                            <figure>
-                                <picture>
-                                    <img src="assets/imgs/image.png" alt="Exemplo onclick" style="width: 950px;">
-                                </picture>
-                            </figure>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Atraves do JS</strong>
-                    <ul>
-                        <li>
-                            Desse modo pelo proprio <strong>JS</strong> definimos o evento de clique, para isso primeiro <strong>selecionamos o elemento</strong> e depois usamos a funcao <code>.addEventListener("clique", "criou")</code> nele temos dois parametros: evento e o nome da funcao que ele ira executar. Ou ate mesmo podemos criar uma <strong>function ja dentro do parametro.</strong> <button class="botao two" onclick="cricou()">Clique Teste</button> <br>
-                            Ex: <br>
-                            <figure>
-                                <picture>
-                                    <img src="assets/imgs/function_criou.png" alt="Function Criou">
-                                </picture>
-                                <figcaption>
-                                    A parte do HTML e basicamente o mesmo, apenas uma alteracao na class para <strong>class="botao two";</strong>
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
+        <ol>
+            <li>
+                <strong>onclick</strong>:
+                <ul>
+                    <li>
+                        Com esse atributo, normalmente usamos para colocar o nome de uma função criada no <strong>JS</strong>. Ex:
+                        <button class="botao one" onclick="criou()">Clique Teste</button> <br>
+                        Ex: <br>
+                        <figure>
+                            <picture>
+                                <img src="assets/imgs/image.png" alt="Exemplo onclick" style="width: 950px;">
+                            </picture>
+                        </figure>
+                    </li>
+                </ul>
+            </li>
 
-            <h3>Mais informacoes</h3>
-            <p>
-                Ambas as formas apresentadas sao importantes, dependendo apenas do momento de qual serra usada.
-            </p>
+            <li>
+                <strong>Através do JS</strong>
+                <ul>
+                    <li>
+                        Desse modo, pelo próprio <strong>JS</strong>, definimos o evento de clique. Primeiro <strong>selecionamos o elemento</strong> 
+                        e depois usamos a função <code>.addEventListener("click", criou)</code>.  
+                        Ele possui dois parâmetros: o evento e o nome da função que será executada.  
+                        Também podemos criar uma <strong>função diretamente dentro do parâmetro.</strong>
 
-        </article>
+                        <button class="botao two">Clique Teste</button> <br>
+                        Ex: <br>
 
-    </main>
+                        <figure>
+                            <picture>
+                                <img src="assets/imgs/function_criou.png" alt="Function Criou">
+                            </picture>
+                            <figcaption>
+                                A parte do HTML é basicamente a mesma, apenas uma alteração na class para <strong>class="botao two";</strong>
+                            </figcaption>
+                        </figure>
+
+                        <img src="assets/imgs/dentro_do_parametro.png" alt="arrow function" style="width: 950px;">
+                        Função dentro do parâmetro, pode ser usada tanto normal quanto como mostrado acima com arrow function.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Mais informações</h3>
+        <p>
+            Ambas as formas apresentadas são importantes, dependendo apenas do momento em que serão usadas.
+        </p>
+
+        <a href="gpt.html" class="next-aula" style="color: red;">Correcoes ChatGPT</a>
+
+    </article>
+
+</main>
 
     <!-- Navegação -->
     <a href="../05_manipulando_elementos_1/index.html" class="next-aula">Proxima Aula - Manipulando Elementos 01</a>
