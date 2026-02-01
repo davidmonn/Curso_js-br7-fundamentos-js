@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Selecionando Elementos 02</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,33 +15,79 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../" class="back-aula">Aula Anterior - Selecionando Elementos 01</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Selecionando Elementos 02</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Aqui iremos focar em como <strong>selcionar</strong> elementos, isso e essencial quando estamos trabalhando com grandes projetos onde pode ter diversas <strong>divs</strong> iguais.
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h3>document.getElementById("")</h3>
+            <p>
+                Div com ID, muito util pois so podemos ter um item com o nome da <strong>id</strong>, facilitando na localizacao para modificacao. Ex: <code>document.getELementById("teste")</code>.
+            </p>
 
-            <h3>Mais informacoes</h3>
+            <h3>document.getElementsByTagName("")</h3>
+            <p>
+                Usado para poder selecionar a <strong>tag</strong> pelo <strong>nome</strong>, exemplo: <code>document.getElementsByTagName("DIV")</code>. Menos eficiente em grandes Projetos.
+            </p>
+
+            <h3>document.getElementsByClassName("")</h3>
+            <p>
+                Usado para podermos fazer a selecao por meio da <strong>class</strong>. Ex: <code>document.getElementsClassName("")</code>. 
+            </p>
+
+            <h3>document.querySelector("")</h3>
+            <p>
+                Com ele conseguimos selecionar basicamente como um <strong>CSS</strong>, ex: <strong>id: querySelector("#teste")</strong>, <strong>class: querySelector(".teste")</strong>, <strong>tag: querySelector("h1")</strong>. Com ele podemos ate fazerr efeito <strong>casacata</strong>, onde se por exemplo houver um <strong>elemento</strong> dentro de outro como: <strong>ul > li</strong>, dessa forma em <strong>cascata</strong>, poderiamos fazer da seguinte forma para selecionar: <code>document.querySelector("li")</code> ou se quiser todos <strong>querySelectorAll("li")</strong>, para efeito camada temos <strong>document.querySelectorAll("#teste ul li")</strong>, dessa forma se tivermos uma ul com duas <strong>li</strong> diferentes, conseguimos selecionar a primeira <strong>li</strong>.
+            </p>
+
+
+            <h3 class="separado">Observacoes Importantes:</h3>
+
+            <h3 class="junto">Elements</h3>
+            <p class="junto">
+                Sempre que usamos <strong>elements</strong> no plural, temos que nos atentar quando formos fazer a <strong>manipulacao</strong>, isso pois ele sempre nos retorna um <strong>array</strong>, mesmo que possua apenas um elemento com o mesmo nome.
+            </p>
+
+            <h3>elementById("")</h3>
+            <p class="junto">
+                Sempre que usamos um id ele usara "element" e esta no <strong>singular</strong>, isso pois nao podemos possuir mais de uma <strong>id</strong> com mesmo nome.
+            </p>
+
+            <h3>elementsByClassName("")</h3>
+            <p class="junto">
+                Obs: aqui podemos observar que o <strong>"elements"</strong> volta para o <strong>plural</strong>, isso pois podemos ter mais de um <strong>elemento</strong> com a mesma <strong>class</strong>.
+            </p>
+
+            <h3>querySelectorAll("")</h3>
+            <p>
+                Sempre ira nos retornar um <strong>array</strong>, mesmo se tiver apenas um elemento do que selecionamos.
+            </p>
+
+
+
+            <h3 id="teste">DIV DE TESTE</h3>
+
+            <button class="button" style="padding: 5px; margin: 15px auto;">Teste de Button</button>
+
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../04_eventos_de_clique/index.html" class="next-aula">Proxima Aula - Evento de Clique</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
