@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Manipuando Elementos 01</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,17 +15,17 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../04_eventos_de_clique/index.html" class="back-aula">Aula Anterior - Eventos de Clique</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Manipuando Elementos 01</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Quando dizemos <strong>manipular elemento</strong> significa fazer qualquer tipo de alteracao nesse elemento, e temos diversas formas de estarmos fazendo isso.
             </p>
 
         </section>
@@ -33,15 +33,123 @@
         <article class="curso-ex">
 
             <h3>Explicacao</h3>
+            <p>
+                Para essa aula iremos ter como exemplo um botao e nele teremos as seguintes informacoes importantes: atributo <strong>onclick</strong> para chamar a funcao.
+            </p>
+
+            <h3>Selecionando com children</h3>
+            <p>
+                <strong>Importante entender:</strong> Neste exemplo, teremos uma <strong>div</strong> que chama a função através do atributo <strong>onclick="testando()"</strong>. Dentro dessa div existirão <strong>duas listas (ul)</strong>, e cada lista conterá <strong>dois itens (li)</strong>.
+            </p>
+            
+            <p class="junto">
+                Quando usamos <strong>children</strong>, estamos selecionando apenas os <strong>filhos diretos (imediatos)</strong> de um elemento.  
+                Ou seja, se tivermos uma <strong>div</strong> e dentro dela existir uma <strong>ul</strong> com <strong>li</strong>, o <strong>children</strong> vai retornar apenas a <strong>ul</strong>, pois ela é o filho direto da div. Os <strong>li</strong> não são selecionados, porque são filhos da <strong>ul</strong> (filhos do filho).
+            </p>
+            <p class="junto">
+                Podemos fazer da seguinte forma para selecionar nosso <strong>elemento ul</strong>:
+            </p>
+            <p class="junto">
+                <strong>console.log(teste.children):</strong> ira selecionar nossas 2 <strong>ul</strong>.  Obs: <code>teste</code> de nosso exemplo é a variavel que esta sendo armazenada nosso <strong>querySelector</strong>
+            </p>
+            <p class="junto">
+                <strong>console.log(teste.children[0].children):</strong> Agora irá mostrar os <strong>li</strong> dentro da <strong>ul</strong>.  
+                Isso acontece porque a <strong>ul</strong> também é um elemento. Ao usarmos <strong>[0]</strong>, estamos acessando a primeira <strong>ul</strong> (filho da div) e, em seguida, com <strong>children</strong>, pedimos para selecionar os filhos imediatos dela, que são os <strong>li</strong>.
+            </p>
+
+            <div id="manipulando-elem" onclick="testando()">
+                <ul>
+                    <li>
+                        ul 1 - item 1
+                    </li>
+                    <li>
+                        ul 1 - item 2
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        ul 2 - item 1
+                    </li>
+                    <li>
+                        ul 2 - item 2
+                    </li>
+                </ul>
+            </div>
+            <h3>Exemplo children:</h3>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/ex_children.png" alt="Exemplo children">
+                </picture>
+            </figure>
+
+            <h3>innerHTML</h3>
+            <p class="junto">
+                Nos retorna o conteúdo do elemento em forma de <strong>string</strong>, incluindo as <strong>tags HTML internas</strong>.  
+                É útil para verificar, ler ou alterar o conteúdo que existe dentro de um elemento.
+            </p>
+            <p class="junto">
+                Se quisermos usar para fazer alteracoes podemos fazer da seguinte forma:
+            </p>
+            <p class="junto">
+                <strong>ul.innerHTML = < li > item alterado < / li >    </strong>
+            </p>
+
+            <h3>Exemplo innerHMTL</h3>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/innerHTML_ex_1.png" alt="Exemplo 01 innerHTML">
+                </picture>
+                <figcaption>
+                    Aqui foi adicionado em forma de array para teste, mas tambem podemos adicionar em forma de variavel comum.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <picture>
+                    <img src="assets/imgs/innerHTML_ex_02.png" alt="">
+                </picture>
+            </figure>
+
+            <p>ou</p>
+            <figure>
+                <picture>
+                    <img src="assets/imgs/innerHTML_com_children.png" alt="innerHTML com children">
+                </picture>
+                <figcaption>
+                    Dessa forma temos o mesmo resultado de forma mais facil, estamos acessando o primeio elemento e selecionando o filho imediato dele com children.
+                </figcaption>
+            </figure>
+
+
+            <h3>innerText</h3>
+            <p>
+                É parecido com <strong>innerHTML</strong>, porém retorna apenas o <strong>texto visível</strong>, sem as tags HTML.  
+                Ou seja, ele ignora as tags e mostra somente o conteúdo em texto.
+            </p>
+
+            <h3>outerHTML</h3>
+            <p class="junto">
+                Retorna o elemento completo em forma de <strong>string</strong>, incluindo a <strong>própria tag HTML</strong> e todo o seu conteúdo interno.  
+                Ou seja, mostra o elemento inteiro, não apenas o que está dentro dele.
+            </p>
+            <p class="junto">
+                Se for usado para alterar o valor (assim como o <strong>innerHTML</strong>), ele não altera apenas o conteúdo, mas <strong>substitui o elemento inteiro</strong> por um novo código HTML.
+            </p>
+
+
 
             <h3>Mais informacoes</h3>
+
+            <button class="element-test" onclick="testando()">
+                Teste
+            </button>
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../06_manipulando_elementos_2/index.html" class="next-aula">Proxima Aula - Manipulacao de Elementos 2</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>

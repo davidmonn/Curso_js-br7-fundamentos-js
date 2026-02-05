@@ -1,16 +1,12 @@
-let profession = "vendedor";
+// function testando() {
+//     const teste = document.querySelector('#manipulando-elem');
+//     console.log(teste.children[0].children);
+// }
 
-switch(profession) {
-    case 'fiscal' : 
-        console.log(`Sua camisa sera verde. Profissao Escolhida: ${profession}`)
-    break;
-    case 'bombeiro' :
-        console.log(`Sua camisa sera vermelha. Profissao Escolhida: ${profession}`)
-    break;
 
-    case 'policial' :
-        console.log(`Sua camisa sera azul. Profissao Escolhida: ${profession}`)
-    break;
-    default:
-        console.log(`Sua camisa sera preta. Profissao Escolhida ${profession}`)
+function testando() {
+    const teste = document.querySelector('#manipulando-elem');
+    const ul = teste.querySelector("ul");
+
+    ul.children[0].innerHTML = "<strong>Modificado com innerHTML = ul.children[0].innerHTML</strong>"
 }
