@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Manipulacao de Elementos 2</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,17 +15,17 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../05_manipulando_elementos_1/index.html" class="back-aula">Aula Anterior - Manipulacao de Elementos 1</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Manipulacao de Elementos 2</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Agora iremos ver mais alguma maneiras de estarmos <strong>manipulando elementos</strong>.
             </p>
 
         </section>
@@ -33,15 +33,124 @@
         <article class="curso-ex">
 
             <h3>Explicacao</h3>
+            <p>
+                Quando selecionamos um <strong>elemento</strong>, como no caso da aula passada onde selecionamos uma <strong>ul</strong>. Temos acesso a diversas <strong>propriedades desse elemento</strong> como tambem a <strong>metodos</strong>.
+            </p>
+
+            <h3>append()</h3>
+            <p>
+                Permite <strong>adicionar conteúdo ao final de um elemento</strong>, sem apagar o conteúdo que já existe. Ou seja, ele adiciona o novo conteúdo junto com o conteúdo atual. Porem so funciona para texto, nao funciona <strong>tags HTML</strong>
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/append.png" alt="Exemplo append">
+                </picture>
+                <figcaption>
+                    children escolhe o elemento, append soma conteúdo
+                </figcaption>
+            </figure>
+
+            <h3>Diferenca de innerHTML e append</h3>
+            <p class="junto">
+                Quando usamos <strong>innerHTML</strong> (assim como <strong>innerText</strong> e <strong>textContent</strong>), o valor atribuído <strong>substitui todo o conteúdo existente</strong> do elemento. Ou seja, o conteúdo antigo é removido e substituído pelo novo conteúdo que você definiu.
+            </p>
+
+            <h3 class="junto">Resumindo:</h3>
+            <ul>
+                <li>
+                    innerHTML = troca tudo
+                </li>
+                <li>
+                    append = soma conteúdo
+                </li>
+            </ul>
+
+            <h3 class="junto">Utilidade Real:</h3>
+            <p class="junto">
+                Se estivermos trabalhando com uma lista muito grande por exemplo 1000 itens, onde desejamos apenas adicionar mais um item ao final, se fizemos isso com <strong>innerHTML</strong> ele ira pegar esse unico item que iremos adicionar, pegar os outros 1000, remover da memoria e vai re-adionar todos os itens novamente com 1 unico novo. Com isso podemos ver diferenca no processamento.
+            </p>
+
+            <h3>appendChild</h3>
+            <p>
+                 O <strong>appendChild</strong> adiciona um <strong>elemento criado no JavaScript</strong> ao final de outro elemento no HTML. Antes de usar, é necessário <strong>criar o elemento com createElement</strong> e definir seu conteúdo.
+            </p>
+
+            <h3>prepend</h3>
+            <p>
+                O <strong>prepend</strong> adiciona conteúdo ou elementos <strong>no início</strong> de um elemento, sem apagar o conteúdo existente. É o contrário do append, que adiciona no final.
+            </p>
+
+            <h3>Metodos</h3>
+            <p>
+                Sao funcoes que temos no proprio <strong>elemento</strong> e servem para podermos <strong>manipulacoes nesse elemento</strong>.
+            </p>
+
+            <h3>Exemplo</h3>
+            <p>
+                Quando queremos adicionar um texto novo em um elemento, ex:
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="" alt="">
+                </picture>
+            </figure>
+
+            <h3>Exemplo no Console do Navegador</h3>
+            <div id="manip-elemen">
+                <ul>
+                    <li>
+                        1ul - li 1 - item 1
+                    </li>
+                    <li>
+                        1ul - li 2 - item 2
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        2ul - li 1 - item 1
+                    </li>
+                    <li>
+                        2ul - li 2 - item 2
+                    </li>
+                </ul>
+                <button onclick="clickTest()">Clique aqui para testar</button>
+            </div>
 
             <h3>Mais informacoes</h3>
+            <h3>Dica appendChild</h3>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/dica_appendChild.png" alt="Dica appendChild" style="width:950px">
+                </picture>
+            </figure>
+
+            <p>
+                <strong>DOM é uma árvore</strong>
+            </p>
+            <ul class="junto">
+                <li>
+                    children navega na árvore
+                </li>
+                <li>
+                    innerHTML substitui
+                </li>
+                <li>
+                    append soma
+                </li>
+                <li>
+                    appendChild cria elemento na memória → adiciona
+                </li>
+                <li>
+                    ordem: criar → preencher → colar
+                </li>
+            </ul>
 
         </article>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../07_manipulando_elementos_3/index.html" class="next-aula">Proxima Aula - Manipulacao de Elementos 3</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
