@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Manipulacao de Elementos 3</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -21,11 +21,11 @@
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Manipulacao de Elementos 3</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Aqui iremos ver mais alguns itens de <strong>manipulacao de elementos</strong>, porem nao iremos mais adicionar coisas dentro de um <strong>elemento</strong> mas ao redor desse <strong>elemento</strong>, assim adicionando antes ou depois do elemento.
             </p>
 
         </section>
@@ -33,8 +33,73 @@
         <article class="curso-ex">
 
             <h3>Explicacao</h3>
+            <p>
+
+            </p>
+
+            <h3>after("")</h3>
+            <p class="junto">
+                Usado para poder ser adicionado conteudo depois do elemento selecionado. Nele apenas conseguimos fazer uso de <strong>strings</strong>, nao funcionando uso de <strong>tags HTML</strong>
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="./assets/imgs/exemplo_after.png" alt="Exemplo after">
+                </picture>
+            </figure>
+
+            <h3>before("")</h3>
+            <p>
+                Usado para adicionado conteudo antes do elemento selecionado.
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="./assets/imgs/exemplo_before.png" alt="Exemplo before">
+                </picture>
+            </figure>
+
+            <h3>Como adicionar tags a after/before</h3>
+            <p class="junto">
+                Tanto para <strong>after</strong> quanto <strong>before</strong> temos duas alternativas para podermos estar adicionando <strong>tags HTML</strong>. Podemos criar <strong>elemento do zero</strong> ou podemos pegar o elemento de algum lugar e colocar onde precisamos.
+            </p>
+
+            <h3>Exemplo:</h3>
+            <h3>Adicionando tag criando elemento</h3>
+            <figure class="junto">
+                <picture>
+                    <img src="./assets/imgs/Exemplo_criando_elemento.png" alt="Exemplo adicionando tag 01">
+                </picture>
+            </figure>
+
+            <h3>Exemplo criacao de lista com loop</h3>
+            <p>
+                Tudo que estamos criando aqui é na memoria, e mesmo sendo na memoria, conseguimos <strong>manipular</strong> da forma que quisermos
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="./assets/imgs/ex_criacao_elem_c_loop.png" alt="Exemplo criando elemento com loop">
+                </picture>
+            </figure>
 
             <h3>Mais informacoes</h3>
+
+            <div class="ex-manip" onclick="clicTest()">
+                <ul>
+                    <li>
+                        Primeira ul - li 1
+                    </li>
+                    <li>
+                        Primeira ul - li 2
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Primeira ul - li 2
+                    </li>
+                    <li>
+                        Segunda ul - li 2
+                    </li>
+                </ul>
+            </div>
 
         </article>
 
