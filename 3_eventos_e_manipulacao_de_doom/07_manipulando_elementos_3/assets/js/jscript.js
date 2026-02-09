@@ -17,7 +17,7 @@
 //     const ul = clic.querySelector("ul");
 
 //     // Usado para poder ser adicionado conteudo antes do elemento selecionado
-//     ul.before("<button>Clique aqui para mais infos</button>");
+//     ul.before("button");
 // }
 
 function clicTest() {

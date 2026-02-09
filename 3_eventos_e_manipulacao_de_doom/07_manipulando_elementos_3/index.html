@@ -15,7 +15,7 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../" class="back-aula">Aula Anterior - Manipulacao de Elementos 02</a>
 
     <main>
 
@@ -39,7 +39,7 @@
 
             <h3>after("")</h3>
             <p class="junto">
-                Usado para poder ser adicionado conteudo depois do elemento selecionado. Nele apenas conseguimos fazer uso de <strong>strings</strong>, nao funcionando uso de <strong>tags HTML</strong>
+                O <strong>método after()</strong> é usado para adicionar conteúdo depois do elemento selecionado. Ele pode receber: <strong>textos(strings)</strong>, <strong>elementos HTML (tags)</strong> e <strong>elementos criados no JS</strong>.
             </p>
             <figure class="junto">
                 <picture>
@@ -57,9 +57,26 @@
                 </picture>
             </figure>
 
-            <h3>Como adicionar tags a after/before</h3>
+            <h3>Como adicionar tags em after() e before()</h3>
             <p class="junto">
-                Tanto para <strong>after</strong> quanto <strong>before</strong> temos duas alternativas para podermos estar adicionando <strong>tags HTML</strong>. Podemos criar <strong>elemento do zero</strong> ou podemos pegar o elemento de algum lugar e colocar onde precisamos.
+                Tanto o <strong>after()</strong> quanto o <strong>before()</strong> permitem adicionar 
+                <strong>tags HTML</strong> ao redor de um elemento (antes ou depois dele).
+            </p>
+
+            <p class="junto">
+                Temos <strong>duas formas principais</strong> de adicionar esses elementos:
+            </p>
+
+            <p class="junto">
+                1) <strong>Criar o elemento do zero</strong> usando JavaScript, por exemplo com 
+                <strong>document.createElement()</strong>.  
+                Usamos essa forma quando o elemento ainda <strong>não existe</strong> na página.
+            </p>
+
+            <p class="junto">
+                2) <strong>Pegar um elemento que já existe</strong> no HTML e mover ele para outra posição 
+                usando <strong>before()</strong> ou <strong>after()</strong>.  
+                Usamos essa forma quando o elemento já foi criado no HTML e só queremos <strong>reposicioná-lo</strong>.
             </p>
 
             <h3>Exemplo:</h3>
@@ -70,10 +87,14 @@
                 </picture>
             </figure>
 
-            <h3>Exemplo criacao de lista com loop</h3>
+            <h3>Exemplo de criação de lista com loop</h3>
             <p>
-                Tudo que estamos criando aqui é na memoria, e mesmo sendo na memoria, conseguimos <strong>manipular</strong> da forma que quisermos
+                Tudo o que estamos criando aqui está sendo feito na <strong>memória</strong> (JavaScript), 
+                ou seja, ainda não está no HTML da página.  
+                Mesmo assim, conseguimos <strong>manipular os elementos</strong> (alterar, adicionar texto, mudar atributos, etc.) 
+                antes de inserir eles no documento.
             </p>
+
             <figure class="junto">
                 <picture>
                     <img src="./assets/imgs/ex_criacao_elem_c_loop.png" alt="Exemplo criando elemento com loop">
@@ -106,7 +127,7 @@
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../08_manipulando_atributos/index.html" class="next-aula">Proxima Aula - Manipulando Atributos</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
