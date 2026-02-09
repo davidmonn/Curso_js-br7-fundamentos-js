@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Manipulando Atributos</title>
 
     <link rel="stylesheet" href="assets/style/style.css">
 
@@ -15,24 +15,72 @@
 <body>
 
     <!-- Navegação entre aulas -->
-    <a href="../" class="back-aula">Aula Anterior - </a>
+    <a href="../07_manipulando_elementos_3/index.html" class="back-aula">Aula Anterior - Manipulando Elementos 3</a>
 
     <main>
 
         <!-- Introdução -->
         <section class="intro">
-            <h1>Switch</h1>
+            <h1>Manipulando Atributos</h1>
             
             <h2>Intro:</h2>
             <p>
-                
+                Iremos aprender como estar manipulando <strong>atributos de elementos (propriedades) </strong>. 
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h3></h3>
+            <p>
+                Nessa aula iremos usar como exemplo a <strong>tag INPUT</strong>, por possuir diversos atributos para podermos estar testando.
+            </p>
+
+            <h3>getAttribute('')</h3>
+            <p class="junto">
+                Com o método <strong>getAttribute('')</strong> podemos verificar o valor de um atributo de uma tag HTML.
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/getAttribute.png" alt="Exemplo getAttribute">
+                </picture>
+            </figure>
+
+            <h3>hasAttribute('')</h3>
+            <p class="junto">
+                O método <strong>hasAttribute()</strong> é usado para fazer uma <strong>verificação booleana</strong>. Ele retorna <strong>true</strong> se o atributo existir no elemento, e <strong>false</strong> se não existir. Ex de uso:
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/hasAttribute.png" alt="Exemplo hasAttribute">
+                </picture>
+            </figure>
+
+            <h3>setAttribute()</h3>
+            <p class="junto">
+                Com o método <strong>setAttribute()</strong> podemos <strong>adicionar ou alterar um atributo</strong> de uma tag HTML, definindo também o <strong>valor desse atributo</strong>. Importante: se o atributo ja existir ele e <strong>alterado</strong> e se não existir é <strong>criado</strong>.
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/setAttribute.png" alt="Exemplo 01 - setAttribute">
+                </picture>
+            </figure>
+            <p class="junto">
+                Ou
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/setAttributeEx02.png" alt="Exemplo 02 - setAttribute">
+                </picture>
+            </figure>
+
+            <h3>Input de Exemplo</h3>
+            <input type="password" name="teste" id="testPut" placeholder="Digite sua senha:">
+            <button id="testBt">
+                Clique aqui
+            </button>
+            
 
             <h3>Mais informacoes</h3>
 
@@ -41,7 +89,7 @@
     </main>
 
     <!-- Navegação -->
-    <a href="../" class="next-aula">Proxima Aula - </a>
+    <a href="../09_manipulando_o_css/index.html" class="next-aula">Proxima Aula - Manipulando o CSS</a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
