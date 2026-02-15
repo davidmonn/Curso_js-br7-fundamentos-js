@@ -25,50 +25,68 @@
             
             <h2>Intro:</h2>
             <p>
-                Aqui iremos ver como podemos <strong>manipular CSS inline nos elementos</strong>.
+                Aqui iremos ver como podemos <strong>modificar o CSS diretamente nos elementos usando JavaScript</strong>.
             </p>
 
         </section>
 
         <article class="curso-ex">
 
-            <h3>Explicacao</h3>
+            <h3>Explicação</h3>
             <p>
-                As mudancas testes que iremos fazer, sera com <strong>CSS Inline</strong>.
+                As mudanças que iremos testar serão feitas usando <strong>CSS Inline</strong>.
             </p>
 
             <p>
-                Iremos comecar modificando nosso primeiro <strong>elemento < li ></strong>, para isso iremos fazer da seguinte forma:
+                Vamos começar modificando nosso primeiro <strong>elemento &lt;li&gt;</strong>.  
+                Para isso, iremos selecioná-lo da seguinte forma:
             </p>
+
             <figure class="junto">
                 <picture>
                     <img src="assets/imgs/selecionando_li.png" alt="Selecionando li">
                 </picture>
                 <figcaption>
-                    Ao selecionarmos dessa maneira apenas pela <strong>tag li</strong>, sera selecionando a <strong>tag</strong> que precisamos no caso a primeira.
+                    Ao selecionar apenas pela <strong>tag li</strong>, o JavaScript irá pegar a 
+                    <strong>primeira ocorrência dessa tag</strong> na página.
                 </figcaption>
             </figure>
 
-            <h3>style</h3>
+            <h3>Propriedade style</h3>
+
             <p>
-                Uma das vantagens de fazer modificacoes <strong>CSS</strong>, é que ela entende <strong>CSS</strong>.
+                Uma vantagem de manipular o <strong>CSS via JavaScript</strong> é que o JS entende as propriedades de CSS.
             </p>
+
             <p class="junto">
-                Exemplo de uso para modificar a cor seria: <strong>li.style.backgroundColor</strong> 
+                Exemplo para modificar a cor de fundo:  
+                <strong>li.style.backgroundColor</strong>
             </p>
+
             <p class="junto">
-                Quando usamos o <strong>style</strong>, se a fonte que modificarmos nao existir, ela sera <strong>adicionada</strong>.
+                Quando usamos <strong>style</strong>, se a propriedade não existir no elemento, 
+                ela será <strong>adicionada automaticamente</strong>.
             </p>
 
             <p>
-                <strong>Importante:</strong> quando temos um propriedades separada como por exemplo o <strong>background-color</strong> que é separada por -. Usamos o metodo de camelCase exemplo: <strong>backgroundColor</strong>.
+                <strong>Importante:</strong> quando a propriedade no CSS possui hífen  
+                (ex: <strong>background-color</strong>), no JavaScript usamos o padrão  
+                <strong>camelCase</strong>, ficando:  
+                <strong>backgroundColor</strong>.
             </p>
 
             <p>
-                <strong>Dica:</strong> quando temos um estilo especifico para aplicarmos em varios elementos, nao e muito interessante sair aplicando <strong>style</strong> igual em todo mundo, um exemplo seria selecionar todos nossos <strong>li</strong>, seria mais util criar uma <strong>class</strong> especifica para uma modificacao de acordo com a <strong>class</strong>.
+                <strong>Dica importante:</strong> quando queremos aplicar o mesmo estilo em vários elementos, 
+                não é uma boa prática sair aplicando <strong>style</strong> em cada um deles.
+            </p>
+
+            <p>
+                Nesses casos, o mais indicado é <strong>criar uma class no CSS</strong> e aplicar essa classe
+                nos elementos via JavaScript.
             </p>
 
             <h3>Exemplos:</h3>
+
             <div class="manipCss">
                 <ul>
                     <li style="background-color: #F00; color: #FFF;" id="prim">
@@ -78,6 +96,7 @@
                         Primeira ul - li 2
                     </li>
                 </ul>
+
                 <ul>
                     <li>
                         Primeira ul - li 2
@@ -86,17 +105,18 @@
                         Segunda ul - li 2
                     </li>
                 </ul>
+
                 <button class="testeManip">Clique aqui</button>
             </div>
 
         </article>
 
-        <a class="next-aula" href="revisaoGPT.html" style="color: black;">Revisao ChatGpt</a>
+        <a href="index.html" class="next-aula" style="color: #000;">Voltar</a>
 
     </main>
 
     <!-- Navegação -->
-    <a href="../10_trabalhando_com_classes/index.html" class="next-aula">Proxima Aula - Trabalhando com Classes</a>
+    <a href="../" class="next-aula">Próxima Aula - </a>
 
     <!-- Script -->
     <script src="assets/js/jscript.js"></script>
