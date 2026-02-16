@@ -25,7 +25,7 @@
             
             <h2>Intro:</h2>
             <p>
-                
+                Aqui iremos aprender a <strong>manipular classes</strong> da melhor maneira possivel, onde muitos programadores avancados nao utilizam e acabam usando de alguns outros metodos menos oficiais.
             </p>
 
         </section>
@@ -33,8 +33,125 @@
         <article class="curso-ex">
 
             <h3>Explicacao</h3>
+            <p>
+                Quando estamos trabalhando com as <strong>classes dos elementos</strong>, primeiramente temos que entender que existe uma propriedade no proprio elemento que ela e responsavel por tudo relacionado a classes daquele elemento.
+            </p>
+            <p class="junto">
+                Iremos usar como exemplo o proprio <strong>button</strong>. Quando queremos acessar a <strong>lista de classes</strong>, ja que um elemento pode ter uma ou mais classes, para exemplificarr, foi adicionado duas classes em nosso <strong>button</strong> ficando da seguinte forma:
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/exemplo_btn.png" alt="Exemplo class button">
+                </picture>
+                <figcaption>
+                    Podemos observar que para adicionar mais class em nosso elemento, é por meio de espacamento, ou seja, nosso elemento <strong>button</strong> de teste, possui 2 class, sendo elas: <strong>manClas e testeButton</strong>. 
+                </figcaption>
+            </figure>
+
+            <h3>classList</h3>
+            <p class="junto">
+                Com ele conseguimos estar verificando as classes do elemento selecionado. Exemplo de uso:
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/classList.png" alt="Exemplo de classList">
+                </picture>
+                <figcaption>
+                    Podemos observar que selecionamos o <strong>button</strong> por sua segunda class.
+                </figcaption>
+            </figure>
+
+            <h3>classList.</h3>
+            <p class="junto">
+                Com o <strong>classList</strong> tambem podemos estar adicionando novas <strong>class</strong>, para fazer isso basta colocar no final de nossa <strong>classList</strong> um <strong>.add</strong>, ficando da seguinte forma:
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/classList_add.png" alt="Adicionando nova class">
+                </picture>
+            </figure>
+
+            <h3>classList.remove</h3>
+            <p class="junto">
+                Com ele removemos a class que desejarmos. Ficando da seguinte forma:
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/classList_remove.png" alt="classList, removendo class">
+                </picture>
+            </figure>
+
+            <h3>classList.toggle</h3>
+            <p class="junto">
+            Com o <strong>toggle</strong>, podemos simplificar nosso código, pois ele adiciona a classe caso não exista e remove caso já esteja aplicada.
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/classList_toggle.png" alt="Ex classList toggle">
+                </picture>
+            </figure>
+
+            <h3>classList.replace</h3>
+            <p class="junto">
+                Com o <strong>replace</strong>, conseguimos substituir uma classe por outra. 
+                Um exemplo seria usá-lo dentro de uma condicional, trocando uma classe específica por outra. 
+                Sua sintaxe fica da seguinte forma:
+            </p>
+
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/classList_replace.png" alt="classList replace">
+                </picture>
+                    <figcaption>
+                        <strong>Obs:</strong> ele nao volta de um para o outro, pois como ele trocou de <strong>testeButton</strong> para <strong>newButton</strong> ele nao ira encontrar o <strong>testeButton</strong>.
+                    </figcaption>
+                </figure>
+                <h3 class="junto">Simplificando condicional com replace:</h3>
+                <figure class="junto">
+                    <picture>
+                        <img src="assets/imgs/classList_simp_cond_c_replace.png" alt="Simplificando condicional com replace">
+                    </picture>
+                </figure>
 
             <h3>Mais informacoes</h3>
+            <h3>classList condicionais:</h3>
+            <p class="junto">
+                Com <strong>classList</strong> podemos fazer tambem condicionais. Exemplo:
+            </p>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/classList_ex_condicional.png" alt="Exemplo de condicional com classList">
+                </picture>
+            </figure>
+            <h3 class="junto">Ou simplificando esse codigo:</h3>
+            <figure class="junto">
+                <picture>
+                    <img src="assets/imgs/classList_simplificando_condicional.png" alt="Simplifcando condicional classList">
+                </picture>
+            </figure>
+            
+            <div class="testes">
+
+                <ul class="listTest">
+                    <li>
+                        Primeira ul - li 1
+                    </li>
+                    <li>
+                        Primeira ul - li 2
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Segunda ul - li 1
+                    </li>
+                    <li>
+                        Segunda ul - li 2
+                    </li>
+                </ul>
+
+                <button class="manClas testeButton">Clique aqui</button>
+
+            </div>
 
         </article>
 
