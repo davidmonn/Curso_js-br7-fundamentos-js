@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Teclado 01</title>
+
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegação entre aulas -->
+    <a href="../10_trabalhando_com_classes/index.html" class="back-aula">Aula Anterior - Trabalhando com Classes</a>
+
+    <main>
+
+        <!-- Introdução -->
+        <section class="intro">
+            <h1>Eventos de Teclado 01</h1>
+            
+            <h2>Intro:</h2>
+            <p>
+                Agora iremos ver alguns eventos de teclado, captando oque o usuario esta digitando ou ate como o usuario esta digitando.
+            </p>
+
+        </section>
+
+        <article class="curso-ex">
+
+            <h3>Explicacao</h3>
+
+            <h3>Eventos de teclado</h3>
+            <p class="junto">
+                Quando digitamos, não estamos apenas apertando uma tecla. Existe um processo: pressionamos, podemos segurar por um momento e depois soltamos. Ou seja, pelo menos três ações acontecem: apertar, manter pressionado e soltar.  
+                Para cada uma dessas ações existe um <strong>evento</strong> do <strong>JavaScript</strong> que é acionado. Ao pressionar uma tecla, normalmente mais de um evento é disparado, como por exemplo o de pressionar e o de soltar.
+            </p>
+            <p class="junto">
+                Esses eventos podem ser utilizados de duas formas: diretamente no <strong>HTML</strong> ou através do <strong>JavaScript</strong>.
+            </p>
+
+            <h3 class="separado">HTML: onkeydown=""</h3>
+            <p class="junto">
+                Nesse método usamos o <strong>atributo onkeydown=""</strong> e, dentro das aspas, colocamos o <strong>nome da função</strong>, assim como fazemos no <strong>onclick</strong>.  
+                Para eventos de teclado no HTML, temos três atributos principais:
+            </p>
+
+            <ul class="junto">
+                <li>
+                    <strong>onkeydown=""</strong>
+                    <ul>
+                        <li>Disparado quando a tecla é pressionada</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>onkeypress=""</strong>
+                    <ul>
+                        <li>Disparado enquanto a tecla está pressionada (mais usado para caracteres)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>onkeyup=""</strong>
+                    <ul>
+                        <li>Disparado quando a tecla é solta</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>JS: keydown, keypress e keyup</h3>
+            <p class="junto">
+                Assim como fazemos no <strong>onclick</strong>, aqui primeiro selecionamos o elemento onde queremos aplicar o evento.  
+                Depois disso, criamos a função que será executada quando uma tecla for acionada e usamos o 
+                <strong>addEventListener("", )</strong>, da mesma forma que usamos com clique.
+            </p>
+
+            <p class="junto">
+                No <strong>JavaScript</strong> também temos três opções de eventos de teclado, assim como no <strong>HTML</strong>: 
+                <strong>keydown</strong>, <strong>keypress</strong> e <strong>keyup</strong>.  
+                Após escolher um deles, adicionamos a função que será chamada quando o evento acontecer.
+            </p>
+
+            <h3>Importante</h3>
+            <p>
+                O <strong>onkeypress</strong> normalmente não é o primeiro evento que utilizamos.  
+                Isso porque, quando seguramos uma tecla, eventos como <strong>keydown</strong> e 
+                <strong>keypress</strong> podem ser disparados várias vezes seguidas.
+            </p>
+
+            <p>
+                Já o <strong>onkeyup</strong> acontece apenas uma vez, no momento em que soltamos a tecla.  
+                Por isso, quando queremos executar uma ação com mais controle e evitar repetições, 
+                geralmente preferimos usar o <strong>onkeyup</strong>.
+            </p>
+
+            <div id="testesManip">
+
+                <form action="#" method="GET">
+
+                    <h3 class="separado">Teste de Manipulacao de teclado</h3>
+                    <label>Evento de teclado pelo HTML
+                        <input type="text" name="teste" placeholder="Digite aqui..." onkeydown="apertou()" onkeypress="segurou()" onkeyup="soltou()">
+                    </label> <br> <br>
+                    <!--
+                    <label class="keyJS">Evento de teclado pelo JS
+                        <input type="text" name="teste" placeholder="Digite aqui...">
+                    </label>
+                    -->
+
+                </form>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- Navegação -->
+    <a href="../12_eventos_d_teclado_2/index.html" class="next-aula">Proxima Aula - Eventos de Teclado 02</a>
+
+    <!-- Script -->
+    <script src="assets/js/jscript.js"></script>
+</body>
+</html>
